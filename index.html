@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeeMeaw - เว็บไซต์ของคุณแบบพร้อมใช้</title>
+    <meta name="description" content="ออกแบบเว็บไซต์สำหรับคนที่มีเนื้อหาแต่ไม่มีความอดทนกับเทคโนโลยี">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="logo.png">
+</head>
+<body>
+    <div class="preloader">
+        <div class="preloader-content">
+            <img src="logo.png" alt="MeeMeaw Logo" class="preloader-logo">
+            <div class="preloader-text">MeeMeaw</div>
+            <div class="preloader-dots">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="min-h-screen bg-light-peach">
+        <header class="sticky-header">
+            <div class="container">
+                <div class="logo-container">
+                    <div class="logo-wrapper">
+                        <img src="logo.png" alt="MeeMeaw Logo" class="logo bounce">
+                        <div class="logo-ping"></div>
+                    </div>
+                    <span class="logo-text">MeeMeaw</span>
+                </div>
+                <nav class="main-nav">
+                    <a href="#about" class="nav-link">เกี่ยวกับเรา</a>
+                    <a href="#services" class="nav-link">บริการ</a>
+                    <a href="#pricing" class="nav-link">ราคา</a>
+                    <a href="#faq" class="nav-link">คำถามที่พบบ่อย</a>
+                </nav>
+                <a href="https://lin.ee/TZXPeBc" target="_blank" rel="noopener noreferrer" class="contact-button">
+                    <i class="fa-solid fa-message text-green"></i>
+                    ติดต่อเรา
+                </a>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero-section animate-on-load">
+            <div class="background-blobs">
+                <div class="blob pink-blob"></div>
+                <div class="blob purple-blob"></div>
+                <div class="blob yellow-blob"></div>
+            </div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="new-badge animate-slide-in" style="--delay: 0.1s">ง่าย & รวดเร็ว!</div>
+                    <h1 class="hero-title animate-slide-in" style="--delay: 0.3s">
+                        <span class="emoji-large">🐾</span>
+                        <span class="title-text">
+                            MeeMeaw – เว็บไซต์ของคุณแบบพร้อมใช้
+                        </span>
+                        <span class="emoji-large wiggle">🎉</span>
+                    </h1>
+                    <p class="hero-subtitle animate-slide-in" style="--delay: 0.5s">ออกแบบเว็บไซต์สำหรับคนที่มีเนื้อหาแต่ไม่มีความอดทนกับเทคโนโลยี</p>
+                    <div class="feature-box animate-slide-in" style="--delay: 0.7s">
+                        <div class="feature-item">
+                            <i class="fa-solid fa-xmark text-red"></i>
+                            <p>ไม่ใช้ระบบลากวาง</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fa-solid fa-xmark text-red"></i>
+                            <p>ไม่มีค่าบริการรายเดือน</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fa-solid fa-xmark text-red"></i>
+                            <p>ไม่ต้องคลิกวุ่นวาย</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fa-solid fa-xmark text-red"></i>
+                            <p>ไม่ต้องถามว่า FTP คืออะไร?</p>
+                        </div>
+                    </div>
+                    <a href="https://lin.ee/TZXPeBc" target="_blank" rel="noopener noreferrer" class="cta-button animate-slide-in" style="--delay: 0.9s">
+                        ขอใบเสนอราคาเลย
+                        <i class="fa-solid fa-sparkles text-yellow"></i>
+                    </a>
+                </div>
+                <div class="hero-image animate-fade-in" style="--delay: 1.2s">
+                    <div class="logo-circle-wrapper">
+                        <div class="logo-circle-glow"></div>
+                        <div class="logo-circle">
+                            <div class="logo-container-large">
+                                <img src="logo.png" alt="MeeMeaw Logo" class="logo-large">
+                                <div class="logo-text-bottom"></div>
+                            </div>
+                        </div>
+                        <div class="star-icon">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="heart-icon">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- About Section -->
+<section id="about" class="section bg-white scroll-reveal">
+    <div class="container">
+        <h2 class="section-title reveal-element">🐱 MeeMeaw คืออะไร?</h2>
+        <div class="about-grid">
+            <div class="about-card reveal-element" data-delay="0.2s">
+                <h3 class="card-title">เรียบง่าย ชัดเจน ไม่เวิ่นเว้อ</h3>
+                <p class="card-text">
+                    MeeMeaw คือบริการออกแบบเว็บไซต์สำหรับคนที่มีเนื้อหาแต่ไม่มีความอดทนกับเทคโนโลยี คุณแค่เขียนข้อความ ส่งรูปภาพ แล้วเราจะเปลี่ยนสิ่งเหล่านั้นให้เป็นเว็บไซต์ที่สวย ใช้งานได้ และฉลาด
+                </p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card reveal-element" data-delay="0.3s">
+                    <div class="feature-icon float">
+                        <span>🎨</span>
+                    </div>
+                    <p class="feature-text">ออกแบบเฉพาะคุณ</p>
+                </div>
+                <div class="feature-card reveal-element" data-delay="0.4s">
+                    <div class="feature-icon float">
+                        <span>💻</span>
+                    </div>
+                    <p class="feature-text">ตอบสนองไว & เร็ว</p>
+                </div>
+                <div class="feature-card reveal-element" data-delay="0.5s">
+                    <div class="feature-icon float">
+                        <span>📦</span>
+                    </div>
+                    <p class="feature-text">คุณจะได้รับไฟล์พร้อมใช้</p>
+                </div>
+                <div class="feature-card reveal-element" data-delay="0.6s">
+                    <div class="feature-icon float">
+                        <span>🚫</span>
+                    </div>
+                    <p class="feature-text">ไม่มีระบบลากวาง ไม่มีโฆษณา</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="section bg-light-peach scroll-reveal">
+    <div class="container">
+        <h2 class="section-title reveal-element">🔧 คุณจะได้รับอะไร?</h2>
+        <div class="services-grid">
+            <div class="service-card reveal-element" data-delay="0.2s">
+                <h3 class="card-title">เราจะสร้างเว็บไซต์ HTML/CSS/JS ให้คุณแบบเต็มรูปแบบ</h3>
+                <div class="service-features">
+                    <div class="service-feature">
+                        <i class="fa-solid fa-check text-green"></i>
+                        <p>ออกแบบรองรับมือถือ</p>
+                    </div>
+                    <div class="service-feature">
+                        <i class="fa-solid fa-check text-green"></i>
+                        <p>โครงสร้างหน้าเว็บชัดเจน</p>
+                    </div>
+                    <div class="service-feature">
+                        <i class="fa-solid fa-check text-green"></i>
+                        <p>ใส่ลิงก์ ข้อความ รูปภาพ วิดีโอของคุณได้เต็มที่</p>
+                    </div>
+                    <div class="service-feature">
+                        <i class="fa-solid fa-check text-green"></i>
+                        <p>ไม่มีเทมเพลตซ้ำใคร – ทุกอย่างมาจากเนื้อหาของคุณ</p>
+                    </div>
+                    <div class="service-feature">
+                        <i class="fa-solid fa-check text-green"></i>
+                        <p>เลือกได้: แบบฟอร์มติดต่อที่ส่งตรงเข้า Discord ของคุณ</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card reveal-element" data-delay="0.4s">
+                <h3 class="card-title">📦 สิ่งที่เราต้องการ (แค่นี้จริง ๆ สัญญา!)</h3>
+                <ul class="requirements-list">
+                    <li>ข้อความของคุณ (เช่น แนะนำตัว คำอธิบาย คำทักทาย)</li>
+                    <li>ลิงก์ของคุณ (Instagram, TikTok, Etsy, YouTube, Line ฯลฯ)</li>
+                    <li>รูปภาพของคุณ (โลโก้ พื้นหลัง รูปโปรไฟล์...)</li>
+                    <li>สีหรือสไตล์ที่คุณชอบ</li>
+                    <li>แจ้งว่าอยากได้ระบบข้อความผ่าน Discord หรือไม่</li>
+                </ul>
+                <div class="service-limitations">
+                    <div class="service-limitation">
+                        <i class="fa-solid fa-xmark text-red"></i>
+                        <p>เราไม่เขียนข้อความให้คุณ</p>
+                    </div>
+                    <div class="service-limitation">
+                        <i class="fa-solid fa-xmark text-red"></i>
+                        <p>เราไม่ออกแบบโลโก้</p>
+                    </div>
+                </div>
+                <p class="service-note">คุณให้เราวัตถุดิบ – เราจัดกรอบให้สวยงาม</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Pricing Section -->
+<section id="pricing" class="section bg-white scroll-reveal">
+    <div class="container">
+        <h2 class="section-title reveal-element">💰 ราคา (ยุติธรรมและจ่ายครั้งเดียว)</h2>
+        <div class="pricing-container">
+            <div class="pricing-card reveal-element" data-delay="0.2s">
+                <div class="pricing-table-wrapper">
+                    <table class="pricing-table">
+                        <thead>
+                            <tr>
+                                <th>บริการ</th>
+                                <th>ราคา</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>🌐 เว็บไซต์หน้าเดียวแบบเฉพาะตัว</td>
+                                <td class="price">+350 บาท</td>
+                            </tr>
+                            <tr>
+                                <td>➕ หน้าเพิ่มเติมแต่ละหน้า</td>
+                                <td class="price">+100 บาท</td>
+                            </tr>
+                            <tr>
+                                <td>💬 ระบบข้อความ (ผ่าน Discord Webhook)</td>
+                                <td class="price">+80 บาท</td>
+                            </tr>
+                            <tr>
+                                <td>🔄 แก้ไขเพิ่มเติมหลังรอบตรวจสอบ</td>
+                                <td class="price">+70 บาท ต่อครั้ง</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="pricing-features">
+                    <div class="pricing-feature">
+                        <i class="fa-solid fa-check text-green"></i>
+                        <p>ปรับแก้ได้ฟรี 1 รอบ</p>
+                    </div>
+                    <div class="pricing-feature">
+                        <i class="fa-solid fa-check text-green"></i>
+                        <p>คุณจะได้รับไฟล์ ZIP เว็บไซต์พร้อมใช้</p>
+                    </div>
+                    <div class="pricing-feature">
+                        <i class="fa-solid fa-check text-green"></i>
+                        <p>คุณจัดการโฮสติ้งเอง – อิสระเหมือนกระรอกในฤดูใบไม้ร่วง</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- เพิ่มส่วนบริการโฮสติ้ง -->
+            <div class="hosting-section reveal-element" data-delay="0.4s">
+                <h3 class="hosting-title">🌐 บริการอัปโหลดเว็บไซต์</h3>
+                <div class="hosting-card">
+                    <div class="hosting-header">
+                        <i class="fa-brands fa-github"></i>
+                        <h4>อัปเว็บให้ใช้งาน (GitHub Pages)</h4>
+                    </div>
+                    <div class="hosting-content">
+                        <p class="hosting-price">+100 บาท</p>
+                        <div class="hosting-features">
+                            <div class="hosting-feature">
+                                <i class="fa-solid fa-check text-green"></i>
+                                <p>ฟรี ไม่มีค่าใช้รายเดือน</p>
+                            </div>
+                            <div class="hosting-feature">
+                                <i class="fa-solid fa-check text-green"></i>
+                                <p>ไม่มีโฆษณา</p>
+                            </div>
+                            <div class="hosting-feature">
+                                <i class="fa-solid fa-check text-green"></i>
+                                <p>เปิดดูได้ตลอดจากลิงก์ เช่น https://meemeaw.github.io/yourname</p>
+                            </div>
+                            <div class="hosting-feature">
+                                <i class="fa-solid fa-check text-green"></i>
+                                <p>เหมาะกับเว็บเบา ๆ ไม่ต้องมีระบบหลังบ้าน</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hosting-card">
+                    <div class="hosting-header">
+                        <i class="fa-solid fa-server"></i>
+                        <h4>ช่วยอัปเว็บขึ้น Hostinger / โฮสต์อื่น</h4>
+                    </div>
+                    <div class="hosting-content">
+                        <p class="hosting-price">+150 บาท</p>
+                        <div class="hosting-features">
+                            <div class="hosting-feature">
+                                <i class="fa-solid fa-check text-green"></i>
+                                <p>ถ้าอยากใช้ลิงก์เว็บแบบ yourname.com หรือ ชื่อร้าน.bio</p>
+                            </div>
+                            <div class="hosting-feature">
+                                <i class="fa-solid fa-check text-green"></i>
+                                <p>ลูกค้าต้องซื้อโดเมนเอง (จาก GoDaddy, Namecheap, Hostinger ฯลฯ)</p>
+                            </div>
+                            <div class="hosting-feature">
+                                <i class="fa-solid fa-check text-green"></i>
+                                <p>ถ้ามีบัญชีโฮสต์อยู่แล้ว เช่น Hostinger → เราช่วยอัปเว็บให้ได้</p>
+                            </div>
+                            <div class="hosting-feature">
+                                <i class="fa-solid fa-check text-green"></i>
+                                <p>ถ้าไม่มีบัญชี → เราช่วยสมัครให้พร้อมใช้</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hosting-note">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <p>💬 ราคาไม่รวมค่าโดเมนหรือโฮสต์ ลูกค้าต้องซื้อเอง</p>
+                </div>
+                
+                <div class="hosting-note">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <p>✨ ถ้าไม่แน่ใจ เราช่วยแนะนำได้!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Process Section -->
+        <section class="section bg-light-peach scroll-reveal">
+            <div class="container">
+                <h2 class="section-title reveal-element">📥 ขั้นตอนการทำงาน</h2>
+                <div class="timeline-container">
+                    <div class="timeline-line"></div>
+                    
+                    <div class="timeline-item reveal-element" data-delay="0.1s">
+                        <div class="timeline-content">
+                            <div class="timeline-card">
+                                <p>ติดต่อเราผ่าน Line:</p>
+                                <div class="timeline-button-container">
+                                    <a href="https://lin.ee/TZXPeBc" target="_blank" rel="noopener noreferrer" class="timeline-button">
+                                        <i class="fa-solid fa-message text-green"></i>
+                                        ติดต่อผ่าน Line
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-number">1</div>
+                    </div>
+                    
+                    <div class="timeline-item reveal-element" data-delay="0.2s">
+                        <div class="timeline-number">2</div>
+                        <div class="timeline-content right">
+                            <div class="timeline-card">
+                                <p>คุณจะได้รับคำถามสั้นๆ (สนุกและง่าย)</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item reveal-element" data-delay="0.3s">
+                        <div class="timeline-content">
+                            <div class="timeline-card">
+                                <p>ส่งข้อความ รูปภาพ และลิงก์ให้เรา</p>
+                            </div>
+                        </div>
+                        <div class="timeline-number">3</div>
+                    </div>
+                    
+                    <div class="timeline-item reveal-element" data-delay="0.4s">
+                        <div class="timeline-number">4</div>
+                        <div class="timeline-content right">
+                            <div class="timeline-card">
+                                <p>เราสร้างเว็บไซต์ให้คุณ</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item reveal-element" data-delay="0.5s">
+                        <div class="timeline-content">
+                            <div class="timeline-card">
+                                <p>คุณจะได้รับไฟล์เว็บไซต์พร้อมใช้ - และสามารถอัปโหลดได้ตามต้องการ</p>
+                            </div>
+                        </div>
+                        <div class="timeline-number">5</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Target Audience -->
+<section class="section bg-white scroll-reveal">
+    <div class="container">
+        <h2 class="section-title reveal-element">🎯 MeeMeaw เหมาะกับใคร?</h2>
+        <div class="audience-grid">
+            <div class="audience-card reveal-element" data-delay="0.1s">สายครีเอทีฟ</div>
+            <div class="audience-card reveal-element" data-delay="0.2s">ฟรีแลนซ์</div>
+            <div class="audience-card reveal-element" data-delay="0.3s">ร้านค้าทั่วไปที่ไม่มีระบบร้านค้าออนไลน์</div>
+            <div class="audience-card reveal-element" data-delay="0.4s">ศิลปิน</div>
+            <div class="audience-card reveal-element" data-delay="0.5s">คนที่มีโซเชียลเยอะเกินจำ</div>
+            <div class="audience-card reveal-element" data-delay="0.6s">ใครก็ตามที่ไม่ชอบเรื่องเทคนิค</div>
+        </div>
+        <div class="quote-container">
+            <div class="quote-card reveal-element" data-delay="0.7s">
+                <p class="quote-text">"ฉันรู้ว่าฉันต้องการอะไร – แค่ไม่อยากเขียนโค้ดเอง!"</p>
+                <p class="quote-author">ถ้าใช่ MeeMeaw คือเพื่อนใหม่ของคุณเลยล่ะ</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section id="faq" class="section bg-light-peach scroll-reveal">
+    <div class="container">
+        <h2 class="section-title reveal-element">🙋‍♀️ คำถามที่พบบ่อย (FAQ)</h2>
+        <div class="faq-container">
+            <div class="accordion reveal-element" data-delay="0.2s">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>❓ ต้องมีความรู้ด้านเทคนิคไหม?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>🟢 ไม่ต้องเลย! แค่ส่งข้อความ รูปภาพ และลิงก์ให้เรา – เราจัดการให้หมด คุณไม่ต้องติดตั้งโปรแกรม ไม่ต้องใช้ระบบลากวาง ไม่ต้องเรียน IT</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>❓ จะได้รับอะไรจากเรา?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>🟢 คุณจะได้ไฟล์เว็บไซต์ครบชุดในรูปแบบ ZIP – รวม HTML, CSS และรูปภาพ พร้อมใช้งานทันที อัปโหลดขึ้นเซิร์ฟเวอร์ไหนก็ได้</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>❓ มีบริการโฮสต์เว็บให้ไหม?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>🟢 มีครับ! เรารับอัปขึ้น GitHub Pages เป็นหลัก ซึ่งฟรีไม่มีค่าใช้จ่ายรายเดือน และไม่มีโฆษณา หรือถ้าคุณมีบัญชีโฮสต์อยู่แล้ว เราก็ช่วยอัปโหลดให้ได้ (ดูรายละเอียดเพิ่มเติมในส่วนราคา)</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>❓ เขียนข้อความให้ด้วยได้ไหม?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>🔴 เสียใจด้วยน้า เราไม่เขียนเนื้อหาให้ เพราะคุณรู้จักโปรเจกต์ของตัวเองดีที่สุด เราทำดีไซน์ให้ ส่วนเนื้อหาขอให้คุณจัดการ</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>❓ แล้วโลโก้หรือไอเดียดีไซน์ล่ะ?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>🟠 โลโก้และกราฟิกต่าง ๆ คุณต้องเตรียมมาเองนะ เราจะออกแบบเว็บไซต์โดยใช้สิ่งที่คุณให้ – ไม่มี Photoshop ไม่มี Canva</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>❓ สามารถแก้ไขเว็บไซต์เองทีหลังได้ไหม?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>🟢 ได้เลย! คุณจะได้รับโค้ดเต็ม ๆ สามารถปรับแก้เองได้ หรือถ้าต้องการให้เราช่วยก็ได้ (มีค่าบริการเล็กน้อยในภายหลัง)</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>❓ เว็บไซต์รองรับมือถือไหม?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>🟢 แน่นอน! เว็บไซต์ของเราตอบสนองทุกหน้าจอ ไม่ว่าจะมือถือ แท็บเล็ต หรือคอมพิวเตอร์</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>❓ ชำระเงินยังไง?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>🟢 ชำระเงินง่าย ๆ ผ่าน PayPal หรือ โอนธนาคาร เราจะส่งลิงก์หรืออีเมลให้คุณ</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>❓ ใช้กับโดเมนส่วนตัวได้ไหม?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>🟢 ได้เลย! เมื่อคุณได้ไฟล์ ZIP แล้ว ก็สามารถอัปโหลดไปยังโดเมนของคุณ เช่น www.ชื่อคุณ.com ได้เลย ขอแค่โฮสต์รองรับเว็บแบบ static</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>❓ ระบบข้อความ Discord คืออะไร?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>🟢 คือแบบฟอร์มในเว็บ ที่ให้คนส่งข้อความหาเรา แล้วข้อความจะไปถึง Discord ของคุณโดยตรง เหมาะสำหรับถาม-ตอบ หรือรับข้อความด่วน</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>❓ ใช้เวลากี่วัน?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>🟢 ปกติใช้เวลา 3–5 วัน ขึ้นอยู่กับความเร็วในการส่งเนื้อหามาให้เรา เราจะเริ่มด้วยแบบร่าง แล้วค่อยปรับจูนให้ตรงใจ</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>❓ ติดต่อเราอีกครั้งได้ไหมในอนาคต?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>🟢 ได้ตลอด! เราไม่หายไปหลังจบงาน ถ้าอีก 2 เดือนอยากเปลี่ยนอะไรเล็กน้อยก็ทักมาได้เลย (อาจมีค่าบริการตามรายการราคา 😏)</p>
+                        <div class="faq-button-container">
+                            <a href="https://lin.ee/TZXPeBc" target="_blank" rel="noopener noreferrer" class="faq-button">
+                                <i class="fa-solid fa-message text-green"></i>
+                                ติดต่อเราผ่าน Line
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>❓ GitHub Pages คืออะไร?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>🟢 GitHub Pages คือบริการโฮสติ้งฟรีจาก GitHub ที่เหมาะสำหรับเว็บไซต์แบบ static (HTML, CSS, JavaScript) ไม่มีค่าใช้จ่ายรายเดือน ไม่มีโฆษณา และเปิดดูได้ตลอดเวลา</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section scroll-reveal">
+    <div class="background-blobs">
+        <div class="blob yellow-blob-cta"></div>
+        <div class="blob pink-blob-cta"></div>
+        <div class="blob purple-blob-cta"></div>
+    </div>
+    <div class="container cta-container">
+        <div class="cta-badge reveal-element" data-delay="0.1s">
+            <i class="fa-solid fa-sparkles"></i>
+            พร้อมมีเว็บไซต์เป็นของตัวเองหรือยัง?
+            <i class="fa-solid fa-sparkles"></i>
+        </div>
+        <h2 class="cta-title reveal-element" data-delay="0.2s">📦 ยังมีคำถามอยู่ไหม?</h2>
+        <div class="cta-content">
+            <p class="cta-text reveal-element" data-delay="0.3s">ส่งข้อความหาเราใน Line ได้เลย:</p>
+            <a href="https://lin.ee/TZXPeBc" target="_blank" rel="noopener noreferrer" class="cta-button-large reveal-element" data-delay="0.4s">
+                <i class="fa-solid fa-message text-green"></i>
+                ติดต่อผ่าน Line
+            </a>
+        </div>
+        <p class="cta-tagline reveal-element" data-delay="0.5s">เราไม่กัดนะ – เราแค่เขียนโค้ด 🐱💻</p>
+        <div class="cta-card-container">
+            <div class="cta-card reveal-element" data-delay="0.6s">
+                <h3 class="cta-card-title">🐾 ทำไมต้อง MeeMeaw?</h3>
+                <p class="cta-card-text">
+                    เพราะคุณไม่จำเป็นต้องเข้าใจศัพท์เทคนิคก็สามารถมีตัวตนบนโลกออนไลน์ได้ คุณมีเนื้อหา – เรามีดีไซน์
+                </p>
+                <p class="cta-card-text">
+                    คุณจะได้รับเว็บไซต์ในรูปแบบ ZIP ไม่มีค่ารายเดือน ไม่มีต้องล็อกอิน ไม่มีดราม่าเรื่องโฮสติ้ง
+                </p>
+                <div class="cta-highlight">สรุปง่าย ๆ:</div>
+                <p class="cta-card-text">คุณ + ไอเดียของคุณ = เว็บไซต์ของคุณ ที่เหลือเราจัดให้</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="logo.png" alt="MeeMeaw Logo" class="footer-logo-img bounce">
+                <span class="footer-logo-text">MeeMeaw</span>
+            </div>
+            <div class="footer-links">
+                <a href="#about" class="footer-link">เกี่ยวกับเรา</a>
+                <a href="#services" class="footer-link">บริการ</a>
+                <a href="#pricing" class="footer-link">ราคา</a>
+                <a href="#faq" class="footer-link">คำถามที่พบบ่อย</a>
+            </div>
+            <div class="footer-contact">
+                <a href="https://lin.ee/TZXPeBc" target="_blank" rel="noopener noreferrer" class="footer-button">
+                    <i class="fa-solid fa-message text-green"></i>
+                    ติดต่อเรา
+                </a>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>© <span id="current-year"></span> MeeMeaw. สงวนลิขสิทธิ์ทั้งหมด</p>
+        </div>
+    </div>
+</footer>
+</div>
+
+    <!-- Progress indicator -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar"></div>
+    </div>
+
+    <!-- Scroll to top button -->
+    <button class="scroll-to-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
